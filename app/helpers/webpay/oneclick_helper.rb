@@ -1,0 +1,2 @@
+module Webpay::OneclickHelper
+end

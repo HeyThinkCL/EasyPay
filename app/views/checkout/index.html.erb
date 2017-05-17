@@ -1,0 +1,8 @@
+<form name="myForm" id="myForm" action="<%= @tbk['url'] %>" method="POST">
+  <p>
+    <input type="hidden" name="TBK_TOKEN" value="<%= @tbk['token'] %>" />
+  </p>
+
+</form>
+
+<script type="text/javascript">document.getElementById('myForm').submit();</script>

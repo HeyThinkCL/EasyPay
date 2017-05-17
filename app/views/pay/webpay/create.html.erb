@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="/css/signup-1.min.css">
+
+
+<div class="signup">
+  <div class="signup-body">
+    <a class="signup-brand" href="index.html">
+      <img class="img-responsive" src="/img/logo.svg" alt="Elephant">
+    </a>
+    <p class="signup-heading">
+      <em>Get started with a free account. 30 day free trial, unlimited users. Your card won't be charged anything before the free trial is over and you can cancel anytime.</em>
+    </p>
+    <div class="signup-form">
+      <form class="form-wizard" data-toggle="validator">
+        <ul class="steps">
+
+          <li class="step col-xs-4 ">
+            <a class="step-segment" >
+              <span class="step-icon icon icon-cubes"></span>
+            </a>
+            <div class="step-content">
+              <strong class="hidden-xs">Orden de pago</strong>
+            </div>
+          </li>
+          <li class="step col-xs-4">
+            <a class="step-segment" >
+              <span class="step-icon icon icon-credit-card"></span>
+            </a>
+            <div class="step-content">
+              <strong class="hidden-xs">Metodos de pago</strong>
+            </div>
+          </li>
+          <li class="step col-xs-4 active">
+            <a class="step-segment" >
+              <span class="step-icon icon icon-ticket"></span>
+            </a>
+            <div class="step-content">
+              <strong class="hidden-xs">Confirmacion</strong>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="step-1" class="tab-pane active">
+            <h4 class="tab-pane-heading">
+              <span>Pago realizado con exito</span>
+            </h4>
+            <div class="row">
+
+              <div class="col-xs-12 col-md-12">
+                <div class="pricing-card">
+                  <div class="pricing-card-header bg-success">
+                    <h1 class="pricing-card-price">Webpay</h1>
+                  </div>
+                  <div class="pricing-card-body">
+                    <p class="pricing-card-text">
+                      <u>Orden de pago Nº <%=  @tbk['buyorder'] %></u>
+                    </p>
+                    <ul class="pricing-card-details">
+                      <li>Monto aprobado  :  <%=  @tbk['amount'] %></li>
+                      <li>4 Ultimos digitos de tarjeta : <%=  @tbk['cardnumber'] %></li>
+                      <li>Codigo Autorización : <%=  @tbk['authorizationcode'] %></li>
+                      <li>Tipo de pago : <%=  @tbk['paymenttypecode'] %></li>
+                      <li>Fecha autorizacion : <% @tbk['transactiondate']%> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 ">
+                <a  href="/" class=" col-sm-12 btn btn-primary btn-pill btn-next"  type="button">Gestionar otro pago</a>
+
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="signup-footer">
+    <!--<ul class="list-inline">
+      <li><a class="link-muted" href="login-1.html">Log in</a></li>
+      <li>|</li>
+      <li><a class="link-muted" href="#">Privacy Policy</a></li>
+      <li>|</li>
+      <li><a class="link-muted" href="#">Terms</a></li>
+      <li>|</li>
+      <li><a class="link-muted" href="#">Cookie Policy</a></li>
+      <li>|</li>
+      <li>© Elephant 2016</li>
+    </ul>-->
+  </div>
+</div>
+
+<script src="/js/signup-1.js"></script>
