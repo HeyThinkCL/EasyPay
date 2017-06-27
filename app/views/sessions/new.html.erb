@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/login-3.min.css">
+<div class="login">
+  <div class="login-body">
+    <span class="login-brand" >
+      <h3 class="title-var-title text-center fw-l" > EasyPay</h3>
+    </span>
+    <h4 class="login-heading">Iniciar Sesion</h4>
+    <div class="login-form">
+      <%= form_for(:session, url: login_path) do |f| %>
+          <div class ="md-form-group md-label-floating">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'md-form-control' %>
+          </div>
+          <div class ="md-form-group md-label-floating">
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'md-form-control' %>
+          </div>
+
+          <%= f.submit "Log In", class: "btn btn-primary btn-block" %>
+      <% end %>
+
+    </div>
+  </div>
+  <div class="login-footer">
+  </div>
+</div>

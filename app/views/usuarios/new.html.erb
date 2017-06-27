@@ -1,0 +1,32 @@
+
+<link rel="stylesheet" href="/css/login-3.min.css">
+
+
+<div class="login">
+  <div class="login-body">
+    <a class="login-brand" href="index.html">
+      <img class="img-responsive" src="img/logo.svg" alt="Elephant">
+    </a>
+    <h3 class="login-heading">Sistema de pago</h3>
+    <div class="login-form">
+      <form data-toggle="md-validator" action="" method="post" enctype="multipart/form-data">
+        <div class="md-form-group md-label-floating">
+          <input class="md-form-control" type="email" name="email" spellcheck="false" autocomplete="off" data-msg-required="Por favor inserte su correo ." required>
+          <label class="md-control-label">Email</label>
+        </div>
+        <div class="md-form-group md-label-floating">
+          <input class="md-form-control" type="text" name="codigo" minlength="6" data-msg-minlength="El codigo al menos tiene 6 digitos" data-msg-required="Debe ingresar el numero de pago" required>
+          <label class="md-control-label">Numero de pago</label>
+        </div>
+        <div class="md-form-group md-custom-controls">
+
+          <span aria-hidden="true"> · </span>
+          <a href="/recuperar_mi_codigo">¿Olvide mi numero de pago ?</a>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Pagar</button>
+      </form>
+    </div>
+  </div>
+  <div class="login-footer">
+  </div>
+</div>

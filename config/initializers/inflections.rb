@@ -17,6 +17,11 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
    inflect.irregular 'transaccion', 'transacciones'
    inflect.irregular 'checkout', 'checkout'
    inflect.irregular 'person', 'people'
+   inflect.irregular 'usuario', 'usuarios'
+   inflect.irregular 'orden', 'ordenes'
+   inflect.irregular 'comercio', 'comercios'
+   inflect.irregular 'producto', 'productos'
+   inflect.irregular 'ocp', 'ocps'
 
 
 
