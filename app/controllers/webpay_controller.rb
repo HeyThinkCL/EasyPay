@@ -1,7 +1,6 @@
 class WebpayController < ApplicationController
   require 'libwebpay'
   def getWebPay(certificates)
-    p certificates.commerce_code
     libwebpay = Libwebpay.new
     config = libwebpay.getConfiguration
     config.commerce_code = certificates.commerce_code

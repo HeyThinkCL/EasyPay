@@ -32,9 +32,12 @@ ActiveRecord::Schema.define(version: 20170624212431) do
   end
 
   create_table "ordenes", force: :cascade do |t|
-    t.float   "monto"
-    t.date    "fecha_autorizacion"
-    t.integer "usuario_id"
+    t.integer  "monto"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "comercio_id"
+    t.integer  "usuario_id"
+    t.index ["comercio_id"], name: "index_ordenes_on_comercio_id", using: :btree
     t.index ["usuario_id"], name: "index_ordenes_on_usuario_id", using: :btree
   end
 

@@ -7,4 +7,8 @@ class Pay::InicioController < PayController
   def create
 
   end
+
+  def new
+    
+  end
 end

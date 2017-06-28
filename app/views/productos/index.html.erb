@@ -1,26 +1,24 @@
-
-<div class="panel">
-  <div class="title-bar">
-    <h4 class="title-bar-title text-center fw-l">
-      Productos
-    </h4>
-    <div class="signup p-a-md m-a-md">
-      <div class="singup-body">
-        <div class="singup-form">
-          <div class="tab-content">
-          <div class="row">
-            <div class="col-sm-12 ">
-              <div class="table-responsive">
-                <%= react_component("Productos",{productos:@productos})%>
-              </div>
-            </div>
-              <div class="col-sm-12 ">
-                <a data-toggle="tab" class=" col-sm-12 btn btn-primary btn-pill btn-next"  type="button">Seleccionar Productos</a>
-              </div>
-            </div>
-          </div>
+<div class="p-a-lg m-a-lg">
+  <div class="panel">
+    <div class="title-bar p-a-md m-a-md">
+      <h4 class="title-bar-title text-center">
+        Productos
+      </h4>
+    </div>
+      <div class="p-a-md m-a-md">
+        <div class="">
+          <%= react_component("Productos",{productos:@productos})%>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="signup-footer">
+  <ul class="list-inline">
+    <li><a class="link-muted" href="/help">Inicio Rápido</a></li>
+    <li>|</li>
+    <li><a class="link-muted" href="mailto:contacto@heythink.cl">Contacto</a></li>
+    <li>|</li>
+    <li>© Heythink 2017</li>
+  </ul>
 </div>
